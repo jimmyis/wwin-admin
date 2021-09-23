@@ -1,0 +1,32 @@
+.toast-container {
+  .toast {
+    @apply fixed right-4 w-full;
+
+    max-width: 280px;
+    transition: all 250ms ease-in;
+
+    &.enter,
+    &.appear {
+      opacity: 0.01;
+    }
+
+    &.enter.enter-active,
+    &.appear.appear-active {
+      opacity: 1;
+      transition: opacity 250ms ease-in;
+    }
+
+    &.exit {
+      opacity: 1;
+    }
+
+    &.exit.exit-active {
+      opacity: 0.01;
+      transition: opacity 250ms ease-out;
+    }
+
+    @screen sm {
+      @apply max-w-sm;
+    }
+  }
+}

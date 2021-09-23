@@ -1,0 +1,37 @@
+.navbar {
+  background-image: linear-gradient(45deg, #1ad730, #4e2f91);
+
+  .logo {
+    display: block;
+    width: auto;
+    height: 55px;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-backdrop;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto w-full px-12;
+
+    @screen lg {
+      @apply px-12 #{!important};
+    }
+
+    @screen md {
+      @apply px-6 #{!important};
+    }
+  }
+
+  .section {
+    @apply py-24;
+
+    @screen lg {
+      @apply py-16;
+    }
+  }
+}

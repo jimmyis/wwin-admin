@@ -1,0 +1,79 @@
+// Input
+.currency-input-panel {
+  @apply rounded-lg border border-black-50 p-3;
+
+  &-label {
+    @apply flex justify-between;
+
+    label,
+    span {
+      @apply text-sm font-normal text-black-400;
+    }
+  }
+
+  input {
+    @apply overflow-hidden text-2xl overflow-ellipsis p-0 whitespace-nowrap flex-1;
+
+    appearance: textfield;
+  }
+
+  .currency-max-button,
+  .open-currency-select-button {
+    @apply transition-colors duration-150;
+  }
+
+  .currency-max-button {
+    @apply mx-2 bg-secondary-100 text-secondary-700 px-2 border border-secondary-200 rounded-lg;
+
+    &:hover {
+      @apply border-secondary-700;
+    }
+  }
+
+  .open-currency-select-button {
+    @apply flex items-center justify-center p-2 rounded-lg;
+
+    &:not(.disabled):hover {
+      @apply bg-backdrop;
+    }
+
+    &.disabled {
+      @apply pointer-events-none;
+    }
+  }
+}
+
+// Currency Search Modal
+.currecy-search-modal {
+  @apply grid gap-3;
+}
+
+// Common Base
+.currency-common-base {
+  .button {
+    @apply px-2 py-1;
+
+    &:disabled {
+      @apply opacity-50;
+    }
+  }
+}
+
+// Currency Wrapper
+.currency-list-wrapper {
+}
+
+// Currency Row
+.currency-row {
+  @apply grid gap-2 px-4 py-1 items-center cursor-pointer transition-colors duration-100;
+
+  grid-template-columns: auto minmax(auto,1fr) minmax(0,72px);
+
+  &:hover {
+    @apply bg-backdrop;
+  }
+
+  &.disabled {
+    @apply opacity-50 pointer-events-none;
+  }
+}

@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+// Base
+@import './base/typography';
+@import './base/layout';
+
+@import 'tailwindcss/components';
+// Components
+@import './components/button';
+@import './components/modal';
+@import './components/card';
+@import './components/input';
+@import './components/currency';
+@import './components/tooltip';
+@import './components/loader';
+@import './components/link';
+@import './components/toast';
+@import './components/alert';
+
+@import 'tailwindcss/utilities';

@@ -1,0 +1,4 @@
+export type { ModalProps } from './types'
+export { default as Modal } from './Modal'
+export { default as ModalProvider } from './ModalContext'
+export { default as useModal } from './useModal'

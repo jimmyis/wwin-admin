@@ -1,0 +1,12 @@
+{
+  "name": "wWin Unsupport Token List",
+  "timestamp": "2021-05-06T00:00:00Z",
+  "version": {
+    "major": 3,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "keywords": ["wWin", "default"],
+  "tokens": []
+}

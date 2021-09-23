@@ -1,0 +1,93 @@
+.tooltip {
+  $tooltip-gap: 4px;
+  $tooltip-rotate: rotate(45deg);
+
+  @apply p-3 rounded-lg max-w-80 z-50 bg-black-700 text-white shadow-medium text-sm;
+
+  &::before {
+    @apply bg-black-700 absolute;
+
+    content: '';
+    transform: $tooltip-rotate;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    z-index: -1;
+  }
+
+  // TOP
+  &[data-popper-placement^="top"] {
+    &::before {
+      bottom: -#{$tooltip-gap};
+    }
+  }
+  &[data-popper-placement="top"] {
+    &::before {
+      left: 50%;
+      transform: translateX(-50%) $tooltip-rotate;
+    }
+  }
+  &[data-popper-placement="top-start"] {
+    left: -#{$tooltip-gap * 2} !important;
+  }
+  &[data-popper-placement="top-end"] {
+    right: -#{$tooltip-gap * 2} !important;
+  }
+
+  // BOTTOM
+  &[data-popper-placement^="bottom"] {
+    &::before {
+      top: -#{$tooltip-gap};
+    }
+  }
+  &[data-popper-placement="bottom"] {
+    &::before {
+      left: 50%;
+      transform: translateX(-50%) $tooltip-rotate;
+    }
+  }
+  &[data-popper-placement="bottom-start"] {
+    left: -#{$tooltip-gap * 2} !important;
+  }
+  &[data-popper-placement="bottom-end"] {
+    right: -#{$tooltip-gap * 2} !important;
+  }
+
+  // LEFT
+  &[data-popper-placement^="left"] {
+    &::before {
+      right: -#{$tooltip-gap};
+    }
+  }
+  &[data-popper-placement="left"] {
+    &::before {
+      top: 50%;
+      transform: translateY(-50%) $tooltip-rotate;
+    }
+  }
+  &[data-popper-placement="left-start"] {
+    top: -#{$tooltip-gap * 2} !important;
+  }
+  &[data-popper-placement="left-end"] {
+    bottom: -#{$tooltip-gap * 2} !important;
+  }
+
+  // right
+  &[data-popper-placement^="right"] {
+    &::before {
+      left: -#{$tooltip-gap};
+    }
+  }
+  &[data-popper-placement="right"] {
+    &::before {
+      top: 50%;
+      transform: translateY(-50%) $tooltip-rotate;
+    }
+  }
+  &[data-popper-placement="right-start"] {
+    top: -#{$tooltip-gap * 2} !important;
+  }
+  &[data-popper-placement="right-end"] {
+    bottom: -#{$tooltip-gap * 2} !important;
+  }
+}

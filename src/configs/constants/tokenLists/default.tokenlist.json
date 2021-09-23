@@ -1,0 +1,48 @@
+{
+  "name": "wWin Default List",
+  "timestamp": "2021-05-06T00:00:00Z",
+  "version": {
+    "major": 3,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "keywords": [
+    "wWin",
+    "default"
+  ],
+  "tokens": [
+    {
+      "name": "BUSD Token",
+      "symbol": "BUSD",
+      "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "%PUBLIC_URL%/images/tokens/busd.png"
+    },
+    {
+      "name": "BUSD Token",
+      "symbol": "BUSD",
+      "address": "0x78867bbeef44f2326bf8ddd1941a4439382ef2a7",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "%PUBLIC_URL%/images/tokens/busd.png"
+    },
+    {
+      "name": "BATH Token",
+      "symbol": "BATH",
+      "address": "0x9cc3908a1b38bd966ee9c3a2fbd96e1422ea2bd6",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "%PUBLIC_URL%/images/tokens/bath.png"
+    },
+    {
+      "name": "wWIN Token",
+      "symbol": "wWIN",
+      "address": "0xf5d693ce8515024aaf496cdf11bdb18ca843acee",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "%PUBLIC_URL%/images/tokens/wwin.png"
+    }
+  ]
+}

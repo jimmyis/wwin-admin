@@ -1,0 +1,18 @@
+.copy-address-container {
+  @apply bg-backdrop rounded-2xl w-full h-12 flex items-center overflow-hidden;
+
+  &::after {
+    @apply absolute top-0 right-0 w-16 h-full z-0 rounded-tr-2xl rounded-br-2xl;
+
+    content: '';
+    background-image: linear-gradient(
+      to right,
+      rgba(245, 247, 249, 0.2) 10%,
+      rgba(245, 247, 249, 1) 25%
+    );
+  }
+
+  .copy-button {
+    @apply h-full px-3 relative z-10;
+  }
+}
